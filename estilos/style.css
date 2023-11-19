@@ -1,10 +1,16 @@
 @charset "UTF-8";
 
 :root {
-
+    
     --cor:#739E95;
     --cor2:#AAB6B4;
     --cor3:#E4DBD2;
+    --cor4:#34927e;
+    --cor5:#296d5f;
+    --cor1:#82ccb959;
+    --cor7:rgb(182, 235, 223);
+    
+
 
 }
 
@@ -35,9 +41,9 @@ section#login {     /* usando positios top 50% left 50% + transfor: translate (-
     transform: translate(-50%, -50%);
     overflow: hidden; /*tudo que estiver fora da borda vai ficar escondido */
 
-    width: 250px;
-    height: 500px;
-    border-radius: 30px;
+    width: 252px;
+    height: 510px;
+    border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
 
     transition: width .3s, heith .3s; /* isso faz a imagem crescer em camera lenta*/
@@ -49,7 +55,7 @@ section#login {     /* usando positios top 50% left 50% + transfor: translate (-
 section#login > div#imagem {
     background: blue url(../imagens/pexels-mehmet-turgut-kirkgoz-18831509.jpg);
     height: 200px;
-    width: 250px;
+    width: 252px;
     background-position: center bottom;
     display: block;
     background-size: cover;
@@ -68,4 +74,89 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8;
+}
+
+form > div.campo {
+    background-color: var(--cor5);
+    display: block;
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    border: 2px solid var(--cor5) ;
+}
+
+div.campo > i {
+    color: var(--cor7);
+    /* background-color: black; */
+    font-size: 1.8em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: var(--cor7);
+    border: none;
+    font-size: 1em;
+    /*whith */
+    height: 100%;
+    border-radius: 5px;
+    width: calc(100% - 45px);
+    transform: translateY(-11px);
+    
+    
+}
+
+div.campo > input:focus-within {
+    background-color: white; 
+} /*isso faz a parte do imput mudar de cor quando e clicado */
+
+
+
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    background-color: var(--cor4);
+    border-radius: 8px;
+    color: white;
+    border: none;
+
+    margin-top: 5px;
+    
+    margin-bottom: 5px;
+    border: solid 1px #296d5f;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--cor5);
+    font-size: 1.1em;
+    
+    
+}
+
+div.campo > label {display: none;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    background-color: #34927e;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    border: solid 1px #296d5f;
+    font-size: 1em;
+    
+    
+}
+
+form > a.botao:hover {
+    background-color: var(--cor5);
+    font-size: 1.1em;
+
 }

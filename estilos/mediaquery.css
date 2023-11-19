@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
+/*tablet*/
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
     section#login {
         width: 80vw;
-        height: 45vh;
+        height: 35vh;
     }
 
     body {
@@ -34,18 +36,59 @@
         font-size: 1.0em;
     }
 
-
-
-
-
-
+    form > input[type=submit], form > a.botao {
+       display: block;
+       margin-top: 10px;
+       margin-bottom: 10px;
+       height: 40px;
+       font-size: 1.1em;
+       
     }
+
+    form > input[type=submit]:hover, form > a.botao:hover {
+        font-size: 1.2em;
+    }
+
+    form > div.campo {
+        background-color: var(--cor5);
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        margin: 10px 0px;
+    }
+
+    div.campo > input {
+        transform: translateY(-10);
+       
+
+        
+        
+    }
+
+    div.campo > input {
+        background-color: var(--cor7);
+        border: none;
+        font-size: 1em;
+        /*whith */
+        height: 100%;
+        border-radius: 5px;
+        width: calc(100% - 45px);
+        transform: translateY(-8px); }
 
     
 
+}
+
+
+
+
+
+    /*computador */
+
     @media screen and (min-width: 992px) {
         section#login { width: 990px;
-            height: 510px;
+            height: 380px;
           
 
     }
@@ -87,16 +130,48 @@
         font-size: 1.2em;
     }
 
-
-
-
-    
-
-       
-
+    form > input[type=submit], form > a.botao {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 6px;
+        height: 45px;
+        font-size: 1.2em;
         
+     }
+ 
+     form > input[type=submit]:hover, form > a.botao:hover {
+         font-size: 1.3em;
+     }
+
+     form > div.campo {
+        margin-top: 20px;
+     }
+     
+
+     form > div.campo {
+        
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        margin: 10px 0px;
+    }
+
+
+    div.campo > input {
+        background-color: var(--cor7);
+        border: none;
+        font-size: 1em;
+        /*whith */
+        height: 100%;
+        border-radius: 5px;
+        width: calc(100% - 45px);
+        transform: translateY(-8px); }
+    
     
 
+
+     
 
 
 
